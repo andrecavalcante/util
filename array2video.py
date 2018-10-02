@@ -24,7 +24,7 @@ writer = FFMpegWriter(fps=15, metadata=metadata, codec='rawvideo')
 
 fig = plt.figure()
 
-with writer.saving(fig, "writer_test.mp4", 100):
+with writer.saving(fig, "writer_test.mp4", dpi=60):
     num_frames = 100
     for i in range(num_frames):
         
