@@ -10,7 +10,7 @@ import matplotlib.animation as manimation
 FFMpegWriter = manimation.writers['ffmpeg']
 metadata = dict(title='Movie Test', artist='Matplotlib',
                 comment='Movie support!')
-writer = FFMpegWriter(fps=15, metadata=metadata, codec='rawvideo')
+writer = FFMpegWriter(fps=15, metadata=metadata, codec='mpeg4')
 
 fig = plt.figure()
 
